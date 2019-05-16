@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>jQuary練習</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="container">
+	<div class="q-box">
+		<h2>クリックで要素のサイズを変える</h2>
+		<p class="description">
+			クリックしてボタンのサイズを変更する(toggleじゃない)
+		</p>
+		<div class="btn-wrapper">
+			<div id="js-click-btn" class="btn">ボタン</div>
+		</div>
+	</div>
+
+	<div class="q-box">
+		<h2>ホバーで要素の透明度を変える</h2>
+		<p class="description">
+			ホバーしてボタンの透明度を変更する(toggleじゃない)
+		</p>
+		<div class="btn-wrapper">
+			<div id="js-hover-btn" class="btn">ボタン</div>
+		</div>
+	</div>
+
+	<div class="q-box">
+		<h2>クリックで要素の表示・非表示を変える</h2>
+		<p class="description">
+			ECサイトなどでユーザーが商品の詳細を見たい時だけ表示するときとかに使える
+		</p>
+		<div class="btn-wrapper">
+			<div id="js-show-btn" class="btn">表示</div>
+		</div>
+		<div class="btn-wrapper">
+			<div id="js-hide-btn" class="btn">非表示</div>
+		</div>
+		<div class="box-wrapper">
+			<div id="js-target-element" class="box">これが消えるよ</div>
+		</div>
+	</div>
+	
+	<div class="q-box">
+		<h2>要素の追加</h2>
+		<p class="description">
+			保存して表示するにはAjaxが必要
+		</p>
+		<div class="btn-wrapper">
+			<li id="js-add-btn" class="btn">追加</li>
+			<li id="js-add-btn2" class="btn">追加2</li>
+		</div>
+	</div>
+
+	<div class="q-box">
+		<h2>toggle処理</h2>
+		<p class="description">
+			アコーディオンメニュー
+		</p>
+		<div class="toggle-menu">
+			<dt class="js-toggle">ポケモン</dt>
+				<dd>ピカチュウ</dd>
+				<dd>ヤドン</dd>
+				<dd>カビゴン</dd>
+				<dd>リザードン</dd>
+				<dd>メタモン</dd>
+		</div>
+	</div>
+
+	<div class="q-box">
+		<h2>ハンバーガーメニュー</h2>
+		<p class="description">
+			ヘッダーはレスポンシブに
+		</p>
+		<div class="toggle-menu">
+			<div class="js-hamburger hamburger" id="toggle"><span></span></div>
+		</div>
+	</div>
+
+	<div class="q-box">
+		<h2>スムーズスクロール</h2>
+		<p class="description">
+			ページ内遷移やTOPに戻るとき
+		</p>
+		<div class="btn-wrapper">
+			<div class="btn js-scroll">ボタン</div>
+		</div>
+	</div>
+
+	<div class="q-box">
+		<h2>モーダル</h2>
+		<p class="description">
+			注意事項とか。
+		</p>
+		<div class="btn-wrapper modal-wrapper">
+			<div class="btn js-mordal">ボタン</div>
+			<div class="modal-content">
+				<div class="modal-close js-modal-close">
+					<span>✖</span>
+				</div>
+				<p>モーダル</p>
+
+			</div>
+			<div id="modal-bg" class="js-modal-close"></div>
+		</div>
+	</div>
+
+
+
+<!-- 先にjQuaryを読み込む　→　$などの定義をapp.jsで使えるようにするため -->	
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>	
+<script src="js/app.js"></script>
+</body>
+</html>
